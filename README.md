@@ -18,7 +18,7 @@ performs complete validation at installation.
 just check
 just dist
 just sigil-check
-sigil plugin install codec@1.0.0
+sigil plugin install codec@1.1.0
 sigil run examples/visible.lua
 ```
 
