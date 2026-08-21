@@ -1,0 +1,19 @@
+schema_version = 1
+name = "codec"
+version = "1.0.0"
+description = "capability-free reference codec for Sigil plugins"
+license = "MIT"
+
+[component]
+file = "plugin.wasm"
+entrypoint = "sigil:plugins/codec@1.0.0"
+
+[requires]
+sigil = ">=0.31.0, <1.0.0"
+host_api = "^1.0"
+
+[capabilities]
+
+[repository]
+source = "github:sigil-plugins/codec"
+
