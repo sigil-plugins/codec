@@ -9,12 +9,15 @@ expect(codec["echo-u32"](42) == 42)
 ```
 
 The repository contains the complete WIT and core-WAT source. The component
-build is pinned to `wasm-tools 1.252.0`; CI validates it with Sigil 0.31.0 and
-the release workflow publishes only the canonical package plus `SHA256SUMS`.
+build is pinned to `wasm-tools 1.252.0`; CI uses a pinned zstd 1.5.7
+compatibility packer that emits byte-identical Sigil P3 archives. The release
+workflow publishes only the canonical package plus `SHA256SUMS`, and Sigil
+performs complete validation at installation.
 
 ```bash
 just check
 just dist
+just sigil-check
 sigil plugin install codec@1.0.0
 sigil run examples/visible.lua
 ```
