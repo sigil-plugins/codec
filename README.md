@@ -16,9 +16,9 @@ the release workflow publishes only the canonical package plus `SHA256SUMS`.
 just check
 just dist
 sigil plugin install codec@1.0.0
+sigil run examples/visible.lua
 ```
 
 Installation records a bootstrap digest acquisition, not a signature, grant,
 or project lock. P3 supports this plugin for visible local authoring only;
 evaluation remains fail-closed until P4 supplies an exact checked-in lock.
-
