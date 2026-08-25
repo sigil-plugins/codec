@@ -20,12 +20,15 @@ the package, and publishes the package, `SHA256SUMS`, and
 just check
 just dist
 just sigil-check
-sigil plugin install codec@1.1.1
+sigil plugin install codec@1.1.2
 sigil run examples/visible.lua
 ```
 
-Version 1.1.1 is the first keyless-provenance release. Sigil verifies and pins
-its exact repository, workflow, source commit, protected environment, package,
-manifest, and public transparency proof before installation or evaluation.
-Earlier releases remain historical bootstrap-digest evidence and are never
-promoted in place.
+Version 1.1.2 is the first accepted keyless-provenance release. Sigil verifies
+and pins its exact repository, workflow, source commit, protected environment,
+package, manifest, and public transparency proof before installation or
+evaluation.
+Version 1.1.1 was published while GitHub release immutability was disabled and
+is permanently burned and emergency-denied; its tag and assets are preserved,
+never replaced or deleted. Earlier releases remain historical bootstrap-digest
+evidence and are never promoted in place.

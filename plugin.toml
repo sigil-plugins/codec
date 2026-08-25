@@ -1,6 +1,6 @@
 schema_version = 1
 name = "codec"
-version = "1.1.1"
+version = "1.1.2"
 description = "capability-free reference codec for Sigil plugins"
 license = "MIT"
 
